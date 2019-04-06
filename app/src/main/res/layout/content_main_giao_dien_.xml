@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nen6"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainGiaoDien_Activity"
+    tools:showIn="@layout/activity_main_giao_dien_">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        >
+
+        <Button
+            android:id="@+id/btnTimKiem"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="@drawable/nen2"
+            android:text="Danh sách"
+            android:textColor="#1B1D26"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnThoat"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:background="#7B89D9"
+            android:text="Thoát"
+            android:textColor="#121316"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/tkTen"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tìm Kiếm Theo Tên Nhân Viên !"
+        android:textColor="#0F1113" />
+
+    <EditText
+        android:id="@+id/tkPhongBan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tìm Kiếm Theo Phòng Ban!"
+        android:textColor="#123" />
+
+    <LinearLayout
+        android:id="@+id/Layoutchinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvNhanVien"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

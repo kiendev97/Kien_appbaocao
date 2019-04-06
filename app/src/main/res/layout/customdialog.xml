@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/nen2"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+
+
+        android:text="ĐĂNG KÝ"
+        android:textColor="#0F0E0D"
+        android:textSize="40dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edUserdk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="USER NAME" />
+
+    <EditText
+        android:id="@+id/edPassworldk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:hint="PASSWORL" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnDk"
+            android:layout_margin="10dp"
+            android:textColor="#F1F8FE"
+            android:background="@drawable/nen"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="ĐĂNG KÝ" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnHuydk"
+            android:textColor="#F1F8FE"
+            android:layout_margin="10dp"
+            android:background="@drawable/nen"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:text="HỦY" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

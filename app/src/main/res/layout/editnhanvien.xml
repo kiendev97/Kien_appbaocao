@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nen9"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/them"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="SỬA NHÂN VIÊN"
+        android:textColor="#141313"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edMaNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/them"
+        android:hint="Mã nhân viên" />
+
+    <EditText
+        android:id="@+id/edTenNV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edTenNV"
+        android:hint="Tên Nhân Viên" />
+
+    <EditText
+        android:id="@+id/edGioiTinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edNgaySinh"
+        android:hint=" Giới Tính" />
+
+    <EditText
+        android:id="@+id/edChucVu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edGioiTinh"
+        android:hint="Chức Vụ  " />
+
+    <EditText
+        android:id="@+id/edMaPB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edDantoc"
+        android:hint="Mã Phòng Ban" />
+
+    <EditText
+        android:id="@+id/edTenPB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edSDT"
+        android:hint=" Tên phòng Ban" />
+
+
+    <EditText
+        android:id="@+id/edNgaySinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPhongBan"
+        android:hint="Ngày Sinh" />
+
+    <EditText
+        android:id="@+id/edNoiSinh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPhongBan"
+        android:hint="Nơi Sinh" />
+
+    <EditText
+        android:id="@+id/edQueQuan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPhongBan"
+        android:hint="Quê Quán" />
+    <EditText
+        android:id="@+id/edDienThoai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPhongBan"
+        android:hint="Điện Thoại" />
+    <EditText
+        android:id="@+id/edCMT"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPhongBan"
+        android:hint="Chứng minh thư" />
+    <EditText
+        android:id="@+id/edDantoc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPhongBan"
+        android:hint="Dân Tộc" />
+    <EditText
+        android:id="@+id/edTonGiao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPhongBan"
+        android:hint="Tôn Giáo" />
+
+    <EditText
+        android:id="@+id/edHocVan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edPhongBan"
+        android:hint="Học Vấn" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnedit"
+            android:layout_width="200dp"
+            android:background="#7B89D9"
+            android:textSize="20dp"
+            android:textColor="#101010"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edChucVu"
+            android:layout_marginTop="20dp"
+            android:text="Sửa" />
+
+        <Button
+            android:layout_weight="1"
+            android:id="@+id/btnHuyedit"
+            android:layout_width="200dp"
+            android:background="#7B89D9"
+            android:textSize="20dp"
+            android:textColor="#080808"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edChucVu"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/btnadd"
+            android:text="Đóng" />
+
+    </LinearLayout>
+
+</LinearLayout>
